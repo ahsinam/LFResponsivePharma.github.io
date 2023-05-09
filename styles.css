@@ -119,6 +119,7 @@ nav {
     margin: 52px 0px 0px;
     background-color: #DEE9FF;
     border-radius: 50px;
+
 }
 
 .searchBox i {
@@ -358,12 +359,17 @@ footer {
         width: 100%;
     }
 
+    .backgroundImg .container {
+        height: 60vh;
+    }
+
+
     header {
         height: 40px;
     }
 
     nav {
-        padding: 8px;
+        padding: 16px;
     }
 
     .navMenu ul {
@@ -441,7 +447,12 @@ footer {
         width: 100% !important;
     }
 
+    .icon {
+        display: block;
+    }
+
     /* Navbar CSS starts here  */
+
     .navMenu ul {
         display: none;
     }
@@ -457,6 +468,10 @@ footer {
 
     .hamburger {
         flex: 0 0 calc(50% - 55px);
+    }
+
+    .searchBox {
+        margin: 40px 0px 10px;
     }
 
     /* Navbar CSS ends here  */
@@ -505,11 +520,26 @@ footer {
         margin: 0 10px;
     }
 
+    .affiliationImage .gsk {
+        width: 80px;
+        height: 40px;
+    }
+
+
+
     /* Affiliation CSS ends here  */
 
     /* Benefits CSS starts here  */
     .keyBenefits {
         margin-top: 40px;
+    }
+
+    .keyBenefits .flexBox {
+        flex-direction: column;
+    }
+
+    .keyBenefits .columnFlexBox .flexBox {
+        flex-direction: row;
     }
 
     .benefit {
@@ -527,12 +557,17 @@ footer {
 
     .benefit button {
         padding: 10px 8px;
+        align-self: center;
 
     }
 
     .benefit .descImg img {
-        width: 70px;
-        height: 73px;
+        width: 200px;
+        height: 200px
+    }
+
+    .benefit .benefitDescription {
+        order: 2
     }
 
     /* Benefits CSS ends here  */
