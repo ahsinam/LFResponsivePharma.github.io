@@ -50,7 +50,7 @@ h1 {
     color: var(--primary-color);
 }
 
-/* navigation CSS starts here  */
+/* navigation  */
 
 .icon {
     display: none;
@@ -78,9 +78,8 @@ nav {
     color: white;
 }
 
-/* Navigation CSS ends here  */
 
-/* Description of CSS below  nav starts here  */
+/* Description below  nav  */
 
 .backgroundImg .container {
     height: 80vh;
@@ -150,10 +149,7 @@ nav {
     color: white;
 }
 
-
-/* Description of CSS below  nav ends here  */
-
-/* Affiliation CSS starts here  */
+/* Affiliation   */
 .affiliaton {
     margin-top: 94px;
 }
@@ -184,9 +180,8 @@ nav {
     margin: 0px 90px
 }
 
-/* Affiliation CSS starts here  */
 
-/* KeyBenefit CSS starts here  */
+/* KeyBenefit  */
 .benefit {
     margin: 15px 30px;
 }
@@ -226,9 +221,8 @@ ul li img {
     margin-right: 12px;
 }
 
-/* KeyBenefit CSS ends here  */
 
-/* Client Say CSS starts here  */
+/* Client Say  */
 .wideContainer {
     max-width: 1400px;
 }
@@ -268,9 +262,7 @@ ul li img {
     background-color: var(--seconday-color);
 }
 
-/* Client Say CSS ends here  */
-
-/* Footer CSS starts here  */
+/* Footer  */
 footer {
     margin-top: 140px;
     background-color: var(--primary-color);
@@ -338,11 +330,20 @@ footer {
 }
 
 .footerLists h3 {
+    text-align: center;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 
-.footerLists ul li {
+.footerLists .quicklink {
     margin: 15px 0;
+    text-align: center;
+
+}
+
+.footerLists .quicklink a {
+    text-decoration: none;
+    color: white;
 }
 
 .copyright {
@@ -350,8 +351,26 @@ footer {
     padding-bottom: 16px;
 }
 
+@media (max-width: 992px) {
+    .container {
+        padding: 16px;
+    }
 
-/* Footer CSS ends here  */
+    .navMenu ul {
+        width: 400px;
+    }
+
+    .descImage img {
+        width: 280px;
+        /* height: 200px; */
+    }
+
+    .client img {
+        width: 350px;
+    }
+
+}
+
 
 /* Responsive Design for Tab View  */
 @media (max-width: 768px) {
@@ -373,7 +392,7 @@ footer {
     }
 
     .navMenu ul {
-        width: 400px;
+        width: 350px;
     }
 
     .descWrapper {
@@ -383,17 +402,16 @@ footer {
 
     .descImage {
         height: 200px;
-        width: 200px;
+        width: 180px;
     }
 
-    /* Affiliation CSS starts here  */
+    /* Affiliation  */
     .affiliationImage img {
         margin: 0 40px
     }
 
-    /* Affiliation CSS ends here  */
 
-    /* Key Benefits CSS starts here  */
+    /* Key Benefits */
     .benefits h1,
     .affiliaton h1 {
         font-size: 36px;
@@ -404,9 +422,8 @@ footer {
         width: 240px;
     }
 
-    /* Key Benefits CSS ends here  */
 
-    /* Clients say CSS starts here  */
+    /* Clients say  */
     .wideContainer {
         width: 100vw;
     }
@@ -421,9 +438,7 @@ footer {
         max-width: 300px;
     }
 
-    /* Clients say CSS ends here  */
-
-    /* Footer CSS starts here  */
+    /* Footer  */
     footer {
         padding: 8px;
     }
@@ -436,7 +451,6 @@ footer {
         padding: 16px;
     }
 
-    /* Footer CSS ends here  */
 
 }
 
@@ -451,7 +465,7 @@ footer {
         display: block;
     }
 
-    /* Navbar CSS starts here  */
+    /* Navbar CSS  */
 
     .navMenu ul {
         display: none;
@@ -473,8 +487,6 @@ footer {
     .searchBox {
         margin: 40px 0px 10px;
     }
-
-    /* Navbar CSS ends here  */
 
     /* Description CSS starts here  */
 
@@ -499,9 +511,7 @@ footer {
         display: none;
     }
 
-    /* Description CSS ends here  */
-
-    /* Affiliation CSS starts here  */
+    /* Affiliation */
     .affiliaton {
         margin-top: 30px;
     }
@@ -526,10 +536,7 @@ footer {
     }
 
 
-
-    /* Affiliation CSS ends here  */
-
-    /* Benefits CSS starts here  */
+    /* Benefits  */
     .keyBenefits {
         margin-top: 40px;
     }
@@ -570,9 +577,7 @@ footer {
         order: 2
     }
 
-    /* Benefits CSS ends here  */
-
-    /* Customer say starts here  */
+    /* Customer say   */
     .client img {
         display: none;
     }
@@ -586,8 +591,7 @@ footer {
         justify-content: center;
     }
 
-    /* Customer say ends here  */
-    /* Footer CSS starts here  */
+    /* Footer  */
     footer {
         margin-top: 50px;
     }
@@ -624,8 +628,11 @@ footer {
         font-size: 14px;
     }
 
-    .footerLists p,
-    .footerLists ul li {
+    .footerLists p {
+        font-size: 12px;
+    }
+
+    .footerLists .quicklink a {
         font-size: 12px;
     }
 
@@ -636,6 +643,4 @@ footer {
     .copyright {
         font-size: 12px;
     }
-
-    /* Footer CSS starts here  */
 }
