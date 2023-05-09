@@ -51,6 +51,11 @@ h1 {
 }
 
 /* navigation CSS starts here  */
+
+.icon {
+    display: none;
+}
+
 nav {
     padding-top: 37px;
     height: 79px;
@@ -65,14 +70,16 @@ nav {
     font-weight: bold;
 }
 
-.btn {
+.btn button {
     border: none;
     background-color: var(--seconday-color);
     padding: 10px 38px;
     border-radius: 50px;
+    color: white;
 }
 
 /* Navigation CSS ends here  */
+
 /* Description of CSS below  nav starts here  */
 
 .backgroundImg .container {
@@ -149,7 +156,6 @@ nav {
 .affiliaton {
     margin-top: 94px;
 }
-
 
 .line {
     width: 91px;
@@ -346,12 +352,10 @@ footer {
 
 /* Footer CSS ends here  */
 
-
 /* Responsive Design for Tab View  */
 @media (max-width: 768px) {
-
     .container {
-        max-width: 100%;
+        width: 100%;
     }
 
     header {
@@ -428,4 +432,175 @@ footer {
 
     /* Footer CSS ends here  */
 
+}
+
+
+/* Responsive design for mobile view  */
+@media (max-width: 480px) {
+    .container {
+        width: 100% !important;
+    }
+
+    /* Navbar CSS starts here  */
+    .navMenu ul {
+        display: none;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .btn button {
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        flex: 0 0 calc(50% - 55px);
+    }
+
+    /* Navbar CSS ends here  */
+
+    /* Description CSS starts here  */
+
+    .backgroundImg .container {
+        height: 50vh
+    }
+
+    .descriptionContent h1 {
+        font-size: 24px;
+    }
+
+    .descriptionContent p {
+        padding: 12px 0 22px;
+        font-size: 14px;
+    }
+
+    .descriptionContent ul li {
+        padding: 5px 20px;
+    }
+
+    .descImage {
+        display: none;
+    }
+
+    /* Description CSS ends here  */
+
+    /* Affiliation CSS starts here  */
+    .affiliaton {
+        margin-top: 30px;
+    }
+
+    .line {
+        width: 30px;
+    }
+
+    .benefits h1,
+    .affiliaton h1 {
+        font-size: 24px;
+    }
+
+    .affiliationImage img {
+        width: 80px;
+        margin: 0 10px;
+    }
+
+    /* Affiliation CSS ends here  */
+
+    /* Benefits CSS starts here  */
+    .keyBenefits {
+        margin-top: 40px;
+    }
+
+    .benefit {
+        margin: 35px 15px;
+    }
+
+    .benefit h2 {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .benefit ul li {
+        margin: 12px 0;
+    }
+
+    .benefit button {
+        padding: 10px 8px;
+
+    }
+
+    .benefit .descImg img {
+        width: 70px;
+        height: 73px;
+    }
+
+    /* Benefits CSS ends here  */
+
+    /* Customer say starts here  */
+    .client img {
+        display: none;
+    }
+
+    .clientWords {
+        text-align: center;
+    }
+
+    .cicleDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Customer say ends here  */
+    /* Footer CSS starts here  */
+    footer {
+        margin-top: 50px;
+    }
+
+    footer .footerContent {
+        flex-direction: column;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .footerMail {
+        padding-top: 10px;
+    }
+
+    .searchButton {
+        width: 270px;
+        height: 42px;
+    }
+
+    .searchButton input {
+        margin-left: 12px;
+    }
+
+    .searchButton button {
+        padding: 12px 12px;
+    }
+
+    .footerLists {
+        padding: 0;
+        margin: 24px 0;
+    }
+
+    .footerLists h3 {
+        font-size: 14px;
+    }
+
+    .footerLists p,
+    .footerLists ul li {
+        font-size: 12px;
+    }
+
+    .dExpress p {
+        max-width: 100px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    /* Footer CSS starts here  */
 }
